@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account">
+
+    <RelativeLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/orangePrimary">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnLogout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/baseline_logout_24" />
+
+        </Toolbar>
+
+        <LinearLayout
+            android:id="@+id/accountInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="horizontal"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/baseline_circle_24"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:paddingTop="7dp"
+                android:text="A"
+                android:textColor="@color/orangePrimary"
+                android:textSize="40sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="start"
+                    android:text="Account Name"
+                    android:textColor="#FBFBFB"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="start"
+                    android:text="Account@email.com"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/verified"
+                    android:layout_width="126dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@id/tvEmail"
+                    android:layout_marginTop="-7dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/baseline_verified_24"
+                        android:drawablePadding="7dp"
+                        android:gravity="center"
+                        android:text="Verified Account"
+                        android:textColor="#3FCEC0"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/notVerified"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@id/tvEmail"
+                    android:layout_marginTop="-7dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/baseline_verified_24"
+                        android:drawablePadding="7dp"
+                        android:gravity="center"
+                        android:text="Not Verified"
+                        android:textColor="#B8B8B8"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/upperLayout">
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nishan"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sarkar"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

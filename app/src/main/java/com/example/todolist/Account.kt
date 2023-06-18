@@ -29,6 +29,15 @@ class Account : AppCompatActivity() {
 //
 //        email.text = "$mail"
 //        Log.d("TAG", "found the email")
+
+
+        //---back button---
+        val backButton: ImageButton = findViewById(R.id.backBtn)
+        backButton.setOnClickListener {
+            finish()
+        }
+
+
         accountDetails()
         logout()
     }

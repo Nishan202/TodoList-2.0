@@ -76,7 +76,7 @@ class TodoDetails : AppCompatActivity() {
 
         tvTitleDetails = findViewById(R.id.tvTitleDetails)
         tvNoteDetails = findViewById(R.id.tvNoteDetails)
-        tvDateDetails = findViewById(R.id.tvDateDetails)
+//        tvDateDetails = findViewById(R.id.tvDateDetails)
     }
 
     private fun openUpdateDialog() {

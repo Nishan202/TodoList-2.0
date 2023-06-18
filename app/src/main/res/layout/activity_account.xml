@@ -10,12 +10,19 @@
         android:id="@+id/upperLayout"
         android:layout_width="match_parent"
         android:layout_height="168dp"
-        android:background="@color/orangePrimary">
+        android:background="@color/DeepSkyBlue">
 
         <Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/baseline_arrow_back_ios_new_24" />
 
             <ImageButton
                 android:id="@+id/btnLogout"
@@ -47,7 +54,7 @@
                 android:gravity="center"
                 android:paddingTop="7dp"
                 android:text="A"
-                android:textColor="@color/orangePrimary"
+                android:textColor="@color/DeepBlue"
                 android:textSize="40sp" />
 
             <RelativeLayout

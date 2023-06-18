@@ -48,6 +48,7 @@ class Login : AppCompatActivity() {
                         Toast.makeText(this,"Login Successful", Toast.LENGTH_LONG).show()
                         binding.progressBar.visibility = View.GONE
                         startActivity(intent)
+                        finish()
                     }else{
                         binding.progressBar.visibility = View.GONE
                         Toast.makeText(this,"Login Failed!", Toast.LENGTH_LONG).show()
@@ -64,7 +65,7 @@ class Login : AppCompatActivity() {
         super.onStart()
         if (auth.currentUser != null){
             Intent(this, MainActivity::class.java).also {
-                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK //tujuan flag agar tidak bisa menggunakan back
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK //destination flag so as not to be able to use back
                 startActivity(it)
             }
         }

@@ -136,7 +136,7 @@
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:backgroundTint="#ff9f1c"
+                app:backgroundTint="@color/DeepBlue"
                 app:cornerRadius="13dp" />
 
             <LinearLayout
@@ -164,7 +164,7 @@
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/poppinsmedium"
                     android:text="Log In"
-                    android:textColor="@color/orangePrimary"
+                    android:textColor="@color/DeepBlue"
                     android:textStyle="bold" />
 
             </LinearLayout>
